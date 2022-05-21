@@ -1,0 +1,604 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("../font/BMDOHYEON_ttf.ttf");
+@import url("../font/TMONBlack.ttf");
+@import url("../font/S-Core_Dream_OTF/SCDream1.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream2.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream3.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream4.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream5.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream6.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream7.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream8.otf");
+@import url("../font/S-Core_Dream_OTF/SCDream9.otf");
+/* reset css */
+*{box-sizing: border-box;}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none;}
+/* default css */
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    font-size: 15px;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'S-Core_Dream', sans-serif;
+}
+p{
+    font-family: 'S-Core_Dream', sans-serif;
+}
+/* Entire layout */
+.cd-section {
+    height: 100vh;
+}
+.cd-section>div{
+    height: 100%;
+    position: relative;
+}
+.content{
+    background-color: #ddd;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 80px);
+    left: 20px;
+    bottom: 20px;
+    overflow: hidden;
+}
+/* hadder */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.gnb_inner{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    margin-top: -5px;
+    width: 150px;
+    filter: drop-shadow(3px 3px 4px);
+}
+.gnb{
+    float: right;
+}
+.menu{
+    display: none;
+}
+.menu a{}
+.slogan{
+    font-size: 18px;
+    font-style: italic;
+}
+.trigger{
+    display: none;
+}
+/* hiring */
+.btn-hiring{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.300);
+    transition: 1s;
+}
+.btn-hiring:active{
+    transform: scale(0.2);
+}
+.btn-hiring .fa{
+    transform: rotateY(180deg);
+}
+/* 컨텐트 개별 디자인 */
+/* @@@@@@@@@@@ - section (main) - @@@@@@@@@@@@ */
+/* @@@@@@@@@@@ - section (about) - @@@@@@@@@@@@ */
+.about_inner{
+    height: 100%;
+    background-image: url("../img/2_main_background.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    background-color: #333;
+}
+.about_items{
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.item{
+    overflow: hidden;
+    margin-right: 20px;
+    text-shadow: 2px 2px #000;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.item:hover img{
+    filter: invert(0) drop-shadow(2px 2px 2px #ffbd1b);
+}
+.item:hover h2{
+    letter-spacing: 3px;
+}
+.item img{
+    height: 120px;
+    float: left;
+    filter: invert(100%);
+    margin-right: 20px;
+    transition: .5s;
+}
+.item span{
+}
+.item h2{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+    transition: .5s;
+}
+.item p{
+    margin-top: 15px;
+    overflow: hidden;
+    font-size: 18px;
+}
+/* @@@@@@@@@@@ - section (char) - @@@@@@@@@@@@ */
+.char-inner{
+    height: 100%;
+    background-color: #fff;
+}
+.char-inner input[name=tabmenu]{
+    display: none;
+}
+.tabs{
+    height: 100%;
+    width: 300%;
+    transition: 1s;
+}
+.tab{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+}
+.tab>div{
+    height: 100%;
+    float: left;
+}
+.char-info{
+    width: 25%;
+    z-index: 1;
+}
+.char-photo{
+    height: 100%;
+    width: 75%;
+    overflow: hidden;
+}
+.btn{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 25%;
+    text-align: center;
+    z-index: 2;
+}
+.btn label{
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+}
+.btn label::before{
+    content: '';
+    display: inline-block;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transition: .3s;
+}
+.btn label:hover::before,
+input[id=tab1]:checked ~ .btn label[for=tab1]::before,
+input[id=tab2]:checked ~ .btn label[for=tab2]::before,
+input[id=tab3]:checked ~ .btn label[for=tab3]::before{
+    border: 1px solid #333;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1]{
+    color: crimson;
+}
+input[id=tab2]:checked ~ .btn label[for=tab2]{
+    color: blue;
+}
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+    color: green;
+}
+input[id=tab1]:checked ~ .tabs{
+    margin-left: 0;
+}
+input[id=tab2]:checked ~ .tabs{
+    margin-left: -100%;
+}
+input[id=tab3]:checked ~ .tabs{
+    margin-left: -200%;
+}
+/* @@@ char info */
+.char-info{
+    padding: 50px;
+    position: relative;
+}
+.char-info h3{
+    font-size: 20px;
+}
+.char-info p{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+.char-info ul{
+    line-height: 1.6em;
+    margin: 50px 0;
+}
+.char-info ul li{}
+.char-info ul li::before{
+    content:"\f105";
+    font-family: "fontawesome";
+    margin-right: 5px;
+}
+.detail{
+    margin-bottom: 50px;
+}
+.detail div{
+    display: inline-block;
+    text-align: center;
+    width: 32.5%;
+    color: #999;
+}
+.detail div span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    color: #000;
+    margin-bottom: 10px;
+}
+.view-more{
+    background-color: #ffbd1b;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 50px;
+    transition: .3s;
+    z-index: 2;
+}
+.view-more:hover{
+    background-color: #333;
+    color: #fff;
+}
+.view-more .fa{
+    margin-left: 5px;
+    transition: .3s;
+}
+.view-more:hover .fa{
+    transform: translateX(10px);
+}
+.char-info::before{
+    content: attr(data-text);
+    font-size: 8em;
+    left: 5%;
+    top: 2%;
+    position: absolute;
+    color: #ccc;
+    z-index: -1;
+}
+.char-photo img{
+    height: 100%;
+}
+/* @@@@@@@@@@@ - section (region) - @@@@@@@@@@@@ */
+.region-inner{
+    height: 100%;
+    background-color: #1d1b24;
+}
+.region-feature{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #bbb;
+}
+.region-feature>div{
+    height: 300px;
+}
+.region-info{
+}
+.region-info>div{
+    float: left;
+}
+.region-heading{
+    width: 70%;
+    padding-right: 20px;
+}
+.region-list h2,
+.region-heading h2{
+    color: #fff;
+    margin: 0;
+}
+.region-heading p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.region-list .bar,
+.region-heading hr.bar{
+    background-color: crimson;
+    display: inline-block;
+}
+.region-photo{
+    width: 30%;
+    height: 100%;
+}
+.region-photo img{
+    height: 100%;
+}
+.region-slider{}
+.region-slider div h4{
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.region-slider div h4 span{
+    color: #ffbd1b;
+    font-weight: 700;
+}
+.region-slider div p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+/* @@@@@@@@@@@region-section - slick.js custom css @@@@@@@@@@@@*/
+.region-slider .slick-arrow{
+    display: none !important;
+}
+.region-slider .slick-dots li button:before{
+    color: #fff;
+    font-size: 40px;
+}
+.region-slider .slick-dots li{
+    margin: 0;
+}
+/* @@@@@@@@@@@ - section (story) - @@@@@@@@@@@@ */
+.story_inner{
+    height: 100%;
+}
+.story_inner > div{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.story_about{
+    background-color: #eee;
+    color: #000;
+}
+.about_heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.about_heading h2{
+    font-family: "티몬블랙체";
+    margin: 0;
+}
+.about_heading p{
+    line-height: 1.5em;
+    font-size: 16px;
+    font-family: '에스코어드림3';
+    color: #666;
+    margin-bottom: 30px;
+}
+.bar{
+    width: 10%;
+    height: 4px;
+    margin: 30px auto;
+    border: none;
+    background-color: #ffbd1b;
+}
+.view_youtube{
+    color: #000;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.view_youtube:hover{
+    background-color: #ffbd1b;
+    color: #fff;
+    border-color: transparent;
+}
+.story_img{
+    background-color: #000;
+}
+.story_img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    transform: translate(-50%, -50%);
+}
+/* @@@@@@@@@@@ - section (system) - @@@@@@@@@@@@ */
+.system-inner{
+    background-image: url("../img/6_main_background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.system-inner::before{
+    content: '';
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+.feature{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+}
+.feature>div{
+    float: left;
+}
+.assist{
+    width: 60%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+.skill{
+    width: 40%;
+}
+/* system - 상세디자인 */
+.assist b{
+    font-weight: normal;
+}
+.assist h2{
+    color: #ffbd1b;
+    font-weight: 700;
+    margin: 0;
+}
+.assist p{
+    font-family: "에스코어드림1";
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.assist span{
+    color: #fff;
+    font-family: "에스코어드림3";
+}
+.spirit{
+    margin-bottom: 30px;
+}
+.skill>div{
+    padding: 5px 0;
+}
+.skill>div .fa{
+    color: #ffbd1b;
+    font-size: 40px;
+}
+.skill>div h3{
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+/* @@@@@@@@@@@ - section (contact) - @@@@@@@@@@@@ */
+.contact-inner{
+    background-color: #fff;
+    height: 100%;
+}
+.contact-feature{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contact-feature > div{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.contact-form{}
+.contact-form h3{
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+}
+.contact-form h3 b{}
+.send-box{}
+.send-box label{
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.send-box label span{
+    color: crimson;
+    font-weight: normal;
+}
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    transition: .3s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover{
+    border: 1px solid #ffbd1b;
+    box-shadow: 0 0 10px #ffbd1b;
+}
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus{
+    border: 1px solid #ffbd1b;
+    box-shadow: 0 0 5px #ffbd1b;
+}
+.send-box button{
+    background-color: #ffbd1b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.send-box button:hover{
+    background-color: #222;
+}
+.contact-info{}
+.contact-info h4{
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    font-family: "Montserrat";
+    margin-top: 20px;
+}
+.contact-info h4 b{}
+.contact-info ul li{
+    line-height: 2em;
+}
+.contact-info ul li:last-child{
+    color: #ffbd1b;
+}
+.contact-info p{
+    line-height: 1.5em;
+    font-family: "에스코어드림2";
+}

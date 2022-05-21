@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "배민도현체";
+    src: url("../font/BMDOHYEON_ttf.ttf");
+  }
+@font-face {
+    font-family: "티몬블랙체";
+    src: url("../font/TMONBlack.ttf");
+}
+/* 에스코어드림 */
+@font-face {
+    font-family: "에스코어드림1";
+    src: url("../font/S-Core_Dream_OTF/SCDream1.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "에스코어드림2";
+    src: url("../font/S-Core_Dream_OTF/SCDream2.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "에스코어드림3";
+    src: url("../font/S-Core_Dream_OTF/SCDream3.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "에스코어드림4";
+    src: url("../font/S-Core_Dream_OTF/SCDream4.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "에스코어드림5";
+    src: url("../font/S-Core_Dream_OTF/SCDream5.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "에스코어드림6";
+    src: url("../font/S-Core_Dream_OTF/SCDream6.otf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "에스코어드림7";
+    src: url("../font/S-Core_Dream_OTF/SCDream7.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "에스코어드림8";
+    src: url("../font/S-Core_Dream_OTF/SCDream8.otf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "에스코어드림9";
+    src: url("../font/S-Core_Dream_OTF/SCDream9.otf");
+    font-weight: 900;
+}

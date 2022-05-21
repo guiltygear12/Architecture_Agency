@@ -1,59 +1,425 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Page Scroll Effects | CodyHouse</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./style/font.css">
+	<!-- Resource style -->
+	<link rel="stylesheet" href="./js/velocity/velocity.css"> 
+	<link rel="stylesheet" href="./js/slick/slick-theme.css">
+	<link rel="stylesheet" href="./js/slick/slick.css">
+	<!-- main css -->
+  	<link rel="stylesheet" href="./style/style_main.css">
+	<link rel="stylesheet" href="./style/style_responsive.css">
+	<title> 박민형의 반응형 웹사이트 </title>
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
-
-<body data-hijacking="off" data-animation="scaleDown">
-	<section class="cd-section visible">
-		<div>
-			<h2>Page Scroll Effects</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 2</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 3</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 4</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 5</h2>
-		</div>
-	</section>
-
+<body data-hijacking="on" data-animation="scaleDown">
+	<div class="container">
+		<section id="home" class="cd-section visible">
+			<div>
+				<div class="content">
+					<div class="char-inner">
+						<input type="radio" name="tabmenu" id="tab1" checked>
+						<input type="radio" name="tabmenu" id="tab2">
+						<input type="radio" name="tabmenu" id="tab3">
+						<div class="tabs">
+							<div class="tab">
+								<div class="char-info" data-text="01">
+									<h3>미켈라의 칼날:말레니아</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> Miquella’s Haligtree</li>
+										<li><b>Race :</b>	
+											Empyrean</li>
+										<li><b>Voice : </b>Pippa Bennett Warner</li>
+									</ul>
+									<div class="detail">
+										<div><span>18,473</span>HP</div>
+										<div><span>Fire </span>WeakPoint</div>
+										<div><span>Poison</span>StrongPoint</div>
+									</div>
+									<a href="" class="view-more">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide1_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (2).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (3).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (4).jpg" alt="" srcset="">
+								</div>
+							</div>
+							<div class="tab">
+								<div class="char-info" data-text="02">
+									<h3>달의 왕녀:라니</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> Ranni's Chamber</li>
+										<li><b>Race :</b>	
+											Empyrean</li>
+										<li><b>Voice : </b>Aimee-Ffion Edwards</li>
+									</ul>
+									<div class="detail">
+										<div><span> unknown </span>HP</div>
+										<div><span> unknown </span>WeakPoint</div>
+										<div><span> unknown </span>StrongPoint</div>
+									</div>
+									<a href="" class="view-more">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide2_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide2_ (2).jpg" alt="" srcset="">
+									<img src="./img/3_slide2_ (3).jpg" alt="" srcset="">
+								</div>
+							</div>
+							<div class="tab">
+								<div class="char-info" data-text="03">
+									<h3>미켈라의 칼날:말레니아</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> unknown </li>
+										<li><b>Race :</b> unknown</li>
+										<li><b>Voice : </b>Martha Mackintosh.</li>
+									</ul>
+									<div class="detail">
+										<div><span> unknown </span>HP</div>
+										<div><span> unknown </span>WeakPoint</div>
+										<div><span> unknown </span>StrongPoint</div>
+									</div>
+									<a href="" class="view-more">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide3_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide3_ (1).png" alt="" srcset="">
+									<img src="./img/3_slide3_ (2).jpg" alt="" srcset="">
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<label for="tab1">
+								
+							</label>
+							<label for="tab2">
+								
+							</label>
+							<label for="tab3">
+								
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="cd-section">
+			<div>
+				<div class="content">
+					<div class="about_inner">
+						<div class="about_items">
+							<div class="item">
+								<img src="./img/careers-main-01.png" alt="">
+								<span>
+									<h2>
+										Together we can make an impact
+									</h2>
+									<p>
+										Design Works the excitement of an entrepreneurial environment with the stability of an established practice. Principals and senior leadership work side-by-side with junior designers to create innovative, workable designs.
+									</p>
+								</span>
+							</div>
+							<div class="item">
+								<img src="./img/careers-main-02.png" alt="">
+								<span>
+									<h2>We’re always looking for talent</h2>
+									<p>If you don’t see an open position that fits your talents, send us your resume. We’re always looking for smart, self-starters and will reach out to you if something becomes available.
+									</p>
+								</span>
+							</div>
+							<div class="item">
+								<img src="./img/careers-main-03.png" alt="">
+								<span>
+									<h2>Fellowship</h2>
+									<p>
+										Every summer we offer a Fellowship to a select group of students in architecture, planning and landscape architecture. Read about our 2019 Fellowship winners and learn more about what the Fellowship has to offer.
+									</p>
+								</span>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="char" class="cd-section">
+			<div>
+				<div class="content">
+					<img src="./img/3d-responsive-website-01-wireframe/temp-section-03.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="region" class="cd-section">
+			<div>
+				<div class="content">
+					<div class="region-inner">
+						<div class="region-feature">
+							<div class="region-info">
+								<div class="region-heading">
+									<h2>Planning For <br> the Next Project</h2>
+									<hr class="bar">
+									<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae totam deleniti nam necessitatibus rerum sequi magni facilis? Consequatur iure quas maxime facilis dicta minus dolores corrupti, corporis eos modi ratione unde sit temporibus quo labore est error tenetur porro exercitationem aut odio autem dolor doloremque! Placeat commodi quis quisquam deserunt.
+									</p>
+								</div>
+								<div class="region-photo">
+									<img src="./img/4_main_img.jpg" alt="" srcset="">
+								</div>
+							</div>
+							<div class="region-list">
+								<h2>Region</h2>
+								<hr class="bar">
+								<div class="region-slider">
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+									<div>
+										<h4>림그레이브 <br> Limgrave <span>접목의 고드릭</span></h4>
+										<p>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio quas natus illo corrupti architecto ea est dolores ratione? Quasi!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="story" class="cd-section">
+			<div>
+				<div class="content">
+					<div class="story_inner">
+						<div class="story_about">
+							<div class="about_heading">
+								<h2>
+									황금률의 도래 그리고 <br>
+									데미갓의 탄생
+								</h2>
+								<hr class="bar">
+								<p>...떨어진 잎사귀가 말한다
+									위대한 엘든 링은 부서졌다
+									안개 저편, 우리의 고향인 틈새의 땅에서
+									영원한 여왕 마리카는 숨었고
+									검은 칼날의 음모가 있던 밤, 황금의 고드윈이 처음으로 죽었다
+									마리카의 자식들인 데미갓들은 엘든 링의 파편을 얻어
+									그 힘에 일그러지고 미쳐 파쇄전쟁을 일으켜...
+									왕 없는 싸움 끝에
+									위대한 뜻에 버림받았다
+									오오, 그렇기에 빛 바랜 자여
+									미처 다 죽지 못한 죽은 자들이여
+									머나먼 과거에 잃은 축복이 우리를 부른다
+									미개한 땅의 왕, 호라 루여
+									빛나는 금가면이여
+									동침의 처녀 피아여
+									혐오스러운 대변 먹는 자여
+									온 지혜의 기드온 오프닐 경이여
+									...그리고 잃어버린 축복은 다시 주어진다
+									아직 이름도 없는 빛 바랜 자에게
+									안개 너머로 가 틈새의 땅에 도달하여
+									엘든 링을 뵈어라
+									그리고, 엘데의 왕이 되어라</p>
+								<a href="https://www.youtube.com/watch?v=M-PHjpjnJ2Y&t=7s" target="_blank" class="view_youtube">
+									VIEW THE YOUTUBE
+								</a>
+							</div>
+						</div>
+						<div class="story_img">
+							<img src="./img/5_main.png" alt="">
+						</div>
+					</div>
+			</div>
+		</section>
+		<section id="system" class="cd-section">
+			<div>
+				<div class="content">
+					<div class="system-inner">
+						<div class="feature">
+							<div class="assist">
+								<div class="spirit">
+									<b> 『환혼의 종』을 통해 뼛가루에 담긴 과거의 기억을 불러낸다. </b>
+									<h2>SPIRIT BODY 영체</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet, quaerat laudantium ipsum ipsa porro, sapiente cum aliquam voluptatibus quibusdam, soluta quod! Totam, asperiores. Eaque numquam neque quas unde accusantium.</p>
+									<span>주요 영체: 목없는 기사 루텔, 화신의 물방울, 검은 칼날 티시</span>
+								</div>
+								<div class="torrent">
+									<b> 『영마』토렌트, 빛바랜자를 선택하여 그의 다리가 되어 여정을 돕는다 </b>
+									<h2>TORRENT 토렌트</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet, quaerat laudantium ipsum ipsa porro, sapiente cum aliquam voluptatibus quibusdam, soluta quod! Totam, asperiores. Eaque numquam neque quas unde accusantium.</p>
+									<span>영마 토렌트는 빠른 이동을 도와주며 상승기류를 타고 높은 곳으로 이동이 가능합니다.</span>
+								</div>
+							</div>
+							<div class="skill">
+								<div class="magic">
+									<i class="fa fa-magic" aria-hidden="true"></i>
+									<h3>MAGIC</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sit cumque, laudantium distinctio eum aliquam!</p>
+								</div>
+								<div class="prayer">
+									<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+									<h3>PRAYER</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sit cumque, laudantium distinctio eum aliquam!</p>
+								</div>
+								<div class="ashes-of-war">
+									<i class="fa fa-cutlery" aria-hidden="true"></i>
+									<h3>ASHES-OF-WAR</h3>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sit cumque, laudantium distinctio eum aliquam!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="cd-section">
+			<div>
+				<div class="content">
+					<div class="contact-inner">
+						<div class="contact-feature">
+							<div class="contact-form">
+								<h3><b>Contact</b> Us</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, omnis?</p>
+								<form class="send-box">
+									<label for="">Email <span>*</span></label>
+									<input type="email">
+									<label for="">Subject <span>*</span></label>
+									<input type="text">
+									<label for="">Message <span>*</span></label>
+									<textarea cols="30" rows="10"></textarea>
+									<button>SEND MESSAGE</button>
+								</form>
+							</div>
+							<div class="contact-info">
+								<h4>Our <b>Office</b></h4>
+								<ul>
+									<li>Address : Address: 309, New Cavendish St, EC1Y 3WK</li>
+									<li>Phone : 0800 214 5252</li>
+									<li>Email : designworks@designworks.com</li>
+								</ul>
+								<h4>Business <b>Hours</b></h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i> Monday - Friday : 9am to 5pm</li>
+									<li><i class="fa fa-clock-o"></i> Saturday : 9am to 2pm</li>
+									<li><i class="fa fa-clock-o"></i> Sunday : Closed</li>
+								</ul>
+								<h4>Get in <b>Touch</b></h4>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, dolore dolorem iure provident molestias officiis obcaecati consectetur consequatur, exercitationem expedita quisquam saepe laborum eveniet recusandae, amet quis corporis ullam sunt tenetur quaerat. Praesentium laudantium deserunt cupiditate perspiciatis nesciunt ut. Cupiditate blanditiis unde expedita beatae repellendus quae quia eos voluptatem, veritatis soluta natus! Iusto perferendis placeat accusantium, delectus assumenda pariatur. Totam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<header>
+			<div class="gnb_inner">
+				<div class="logo">
+					<a href="#home">
+						<img src="./img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="gnb">
+					<div class="menu">
+						<a href="#home">HOME</a>
+						<a href="#about">ABOUT</a>
+						<a href="#char">CHARATERS</a>
+						<a href="#region">REGION</a>
+						<a href="#story">STORY</a>
+						<a href="#system">SYSTEM</a>
+						<a href="#contact">CONTACT</a>
+					</div>
+					<div class="slogan">We design places, not projects.</div>
+				</div>
+				<div class="trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+	</div>
+	<a href="#" class="gototop">
+		<img src="./img/gototop.png" alt="">
+	</a>
+	<a href="" class="btn-hiring">
+		<i class="fa fa-comment-o"></i>
+		Hiring
+	</a>
 	<nav>
 		<ul class="cd-vertical-nav">
 			<li><a href="#0" class="cd-prev inactive">Next</a></li>
 			<li><a href="#0" class="cd-next">Prev</a></li>
 		</ul>
-	</nav> <!-- .cd-vertical-nav -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+	</nav> 
+	<!-- .cd-vertical-nav -->
+	<!-- 제이쿼리 -->
+	<script src="./js/jquery-2.1.4.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- 플러그인 -->
+	<script src="./js/velocity/modernizr.js"></script> <!-- Modernizr -->
+	<script src="./js/velocity/velocity.min.js"></script>
+	<script src="./js/velocity/velocity.ui.min.js"></script>
+	<script src="./js/velocity/main.js"></script> <!-- Resource jQuery -->
+	<!-- 슬라이더 slick slider -->
+	<script src="./js/slick/slick.min.js"></script>
+	<!-- 부드러운 스크롤링 애니메이션 플러그인 -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script> -->
+	<!-- custom js -->
+	<script src="./js/custom.js"></script>
 </body>
 </html>
