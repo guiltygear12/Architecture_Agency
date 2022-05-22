@@ -8,47 +8,48 @@
 }
 /* 에스코어드림 */
 @font-face {
-    font-family: "에스코어드림1";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream1.otf");
     font-weight: 100;
 }
 @font-face {
-    font-family: "에스코어드림2";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream2.otf");
     font-weight: 200;
 }
 @font-face {
-    font-family: "에스코어드림3";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream3.otf");
     font-weight: 300;
 }
 @font-face {
-    font-family: "에스코어드림4";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream4.otf");
     font-weight: 400;
 }
 @font-face {
-    font-family: "에스코어드림5";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream5.otf");
     font-weight: 500;
 }
 @font-face {
-    font-family: "에스코어드림6";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream6.otf");
     font-weight: 600;
 }
 @font-face {
-    font-family: "에스코어드림7";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream7.otf");
     font-weight: 700;
 }
 @font-face {
-    font-family: "에스코어드림8";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream8.otf");
     font-weight: 800;
 }
 @font-face {
-    font-family: "에스코어드림9";
+    font-family: "에스코어드림";
     src: url("../font/S-Core_Dream_OTF/SCDream9.otf");
     font-weight: 900;
 }
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');

@@ -1,20 +1,8 @@
 /* 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url("../font/BMDOHYEON_ttf.ttf");
-@import url("../font/TMONBlack.ttf");
-@import url("../font/S-Core_Dream_OTF/SCDream1.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream2.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream3.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream4.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream5.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream6.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream7.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream8.otf");
-@import url("../font/S-Core_Dream_OTF/SCDream9.otf");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 /* reset css */
 *{box-sizing: border-box;}
 ul{list-style: none; padding: 0;}
@@ -88,7 +76,7 @@ header{
     display: none;
 }
 /* hiring */
-.btn-hiring{
+.btn-intro{
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -99,14 +87,129 @@ header{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.300);
     transition: 1s;
 }
-.btn-hiring:active{
+.btn-intro:active{
     transform: scale(0.2);
 }
-.btn-hiring .fa{
+.btn-intro .fa{
     transform: rotateY(180deg);
 }
 /* 컨텐트 개별 디자인 */
 /* @@@@@@@@@@@ - section (main) - @@@@@@@@@@@@ */
+.home-inner{
+    background-color: #fff;
+    height: 100%;
+}
+.home-inner::before{
+    /* display: none; */
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: blackoverlay 1s 2s ease-in-out both;
+}
+.welcome-text{
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    font-family: '배민도현체';
+    line-height: 1.2em;
+    margin: 0;
+    animation: slideup 2s 0s linear;
+    animation-fill-mode: both;
+}
+.welcome-text span{
+    display: block;
+    font-size: 26px;
+}
+.welcome-text span .fa{
+    color: crimson;
+}
+.opacity-img{
+    background-image: url("../img/1_main_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    animation: opacity-img 1s 2.5s both;
+}
+.home-heading{
+    position: absolute;
+    top: 50%;
+    margin-left: 250px;
+    transform: translateY(-50%);   
+}
+.home-heading span{
+    display: block;
+    font-size: 8em;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    /* font-weight: bold; */
+    animation: reveal 1s 3s ease-in-out both;
+}
+.home-heading span:nth-of-type(2){
+    animation-delay: 3.2s;
+}
+.home-heading span:nth-of-type(3){
+    animation-delay: 3.4s;
+}
+/* 애니메이션 */
+@keyframes slideup{
+    0%{
+        opacity: 0;
+        top: 60%;
+    }
+    20%{
+        opacity: 1;
+        top: 50%;
+    }
+    80%{
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        opacity: 0;
+        top: 60%;
+    }
+}
+@keyframes blackoverlay{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes opacity-img{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes reveal{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 /* @@@@@@@@@@@ - section (about) - @@@@@@@@@@@@ */
 .about_inner{
     height: 100%;
@@ -601,4 +704,257 @@ input[id=tab3]:checked ~ .tabs{
 .contact-info p{
     line-height: 1.5em;
     font-family: "에스코어드림2";
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@intro html@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.modal{    
+    font-family: "에스코어드림";
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    top: 0;
+}
+.header-inner{
+    border-bottom: 1px solid #ddd;
+    width: 95%;
+    height: 90px;
+    margin: auto;
+    line-height: 90px;
+}
+.modal-display{
+    font-size: 16px;
+}
+/* TITLE */
+.intro-main{
+    height: 600px;
+    position: relative;
+}
+.intro-heading{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.intro-heading span{
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+.intro-heading span::before,
+.intro-heading span::after{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+}
+.intro-heading span::before{
+    right: 120%;
+}
+.intro-heading span::after{
+    left: 120%;
+}
+.intro-heading h1{
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0;
+}
+/* trailer */
+.intro-trailer{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.intro-trailer>div{
+    /* border: 1px solid #000; */
+    float: left;
+    width: calc(100% /2);
+    height: 600px;
+}
+.center-parent{
+    position: relative;
+}
+.center-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.center-child h2{
+    font-size: 36px;
+    font-weight: normal;
+}
+.center-child p{
+    font-size: 20px;
+}
+.trailer img{
+    height: 100%;
+    width: 100%;
+}
+.intro-slogan{
+    padding: 200px 0;
+}
+.intro-slogan p{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.intro-slogan p::before{
+    content: ',,';
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    position: absolute;
+    color: #ccc;
+    transform: rotate(180deg);
+    top: -80px;
+    left: -80px;
+}
+.game-info ul{
+    display: inline-block;
+    width: 48%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2em;
+    font-weight: 300;
+}
+.game-info ul li:first-child{
+    font-weight: 600;
+}
+.sns{}
+.sns a{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+    position: relative;
+    transition: .3s;
+}
+.sns a::before{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: .3s;
+}
+.sns a:hover{
+    color: #fff;
+}
+.sns a:hover::before{
+    transform: translateX(-50%) scale(1);
+}
+.sns a:nth-of-type(1):before{
+    background-color: #1b2838;
+}
+.sns a:nth-of-type(2):before{
+    background-color: #2E6DB4;
+}
+.sns a:nth-of-type(3):before{
+    background-color: #107C10;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ STROY html@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.intro-main.story-main{
+    background: url("../img/story_main.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.intro-main.story-main.main1{
+    background-image: url("../img/3_slide1_ (1).jpg");
+}
+.intro-main.story-main.main2{
+    background-image: url("../img/3_slide2_ (1).jpg");
+}
+.intro-main.story-main.main3{
+    background-image: url("../img/3_slide3_ (1).jpg");
+}
+.intro-heading span::before,
+.intro-heading span::after{
+    background-color: #fff;
+}
+.story-main .intro-heading{
+    color: #fff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    width: 100%;
+    animation: slidedown 1.5s .5s both;
+}
+.story-main .intro-heading h1{
+    font-family: "Montserrat";
+}
+@keyframes slidedown{
+    0%{
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+.trailer.char-info{
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 150px;
+}
+.trailer.char-info ul{
+    line-height: 2em;
+}
+
+/*  */
+.featherlight iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.featherlight .featherlight-content {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: auto;
+    padding: 0;
+    border-bottom: 25px solid transparent;
+    margin-left: 0;
+    margin-right: 0;
+    background: #fff;
+    cursor: auto;
+    white-space: normal;
+    width: 100%;
+    height: 100%;
+}
+.featherlight .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    line-height: 70px;
+    width: 70px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    padding: 0;
+    font-size: 50px;
 }

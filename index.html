@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./img/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./style/font.css">
 	<!-- Resource style -->
+	<link rel="stylesheet" href="./js/featerlight/featherlight.css">
 	<link rel="stylesheet" href="./js/velocity/velocity.css"> 
 	<link rel="stylesheet" href="./js/slick/slick-theme.css">
 	<link rel="stylesheet" href="./js/slick/slick.css">
@@ -20,103 +22,13 @@
 		<section id="home" class="cd-section visible">
 			<div>
 				<div class="content">
-					<div class="char-inner">
-						<input type="radio" name="tabmenu" id="tab1" checked>
-						<input type="radio" name="tabmenu" id="tab2">
-						<input type="radio" name="tabmenu" id="tab3">
-						<div class="tabs">
-							<div class="tab">
-								<div class="char-info" data-text="01">
-									<h3>미켈라의 칼날:말레니아</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
-									</p>
-									<ul>
-										<li><b>Area :</b> Miquella’s Haligtree</li>
-										<li><b>Race :</b>	
-											Empyrean</li>
-										<li><b>Voice : </b>Pippa Bennett Warner</li>
-									</ul>
-									<div class="detail">
-										<div><span>18,473</span>HP</div>
-										<div><span>Fire </span>WeakPoint</div>
-										<div><span>Poison</span>StrongPoint</div>
-									</div>
-									<a href="" class="view-more">
-										View More Detail<i class="fa fa-arrow-right"></i>
-									</a>
-								</div>
-								<div class="char-photo">
-									<img src="./img/3_slide1_ (1).jpg" alt="" srcset="">
-									<img src="./img/3_slide1_ (2).jpg" alt="" srcset="">
-									<img src="./img/3_slide1_ (3).jpg" alt="" srcset="">
-									<img src="./img/3_slide1_ (4).jpg" alt="" srcset="">
-								</div>
-							</div>
-							<div class="tab">
-								<div class="char-info" data-text="02">
-									<h3>달의 왕녀:라니</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
-									</p>
-									<ul>
-										<li><b>Area :</b> Ranni's Chamber</li>
-										<li><b>Race :</b>	
-											Empyrean</li>
-										<li><b>Voice : </b>Aimee-Ffion Edwards</li>
-									</ul>
-									<div class="detail">
-										<div><span> unknown </span>HP</div>
-										<div><span> unknown </span>WeakPoint</div>
-										<div><span> unknown </span>StrongPoint</div>
-									</div>
-									<a href="" class="view-more">
-										View More Detail<i class="fa fa-arrow-right"></i>
-									</a>
-								</div>
-								<div class="char-photo">
-									<img src="./img/3_slide2_ (1).jpg" alt="" srcset="">
-									<img src="./img/3_slide2_ (2).jpg" alt="" srcset="">
-									<img src="./img/3_slide2_ (3).jpg" alt="" srcset="">
-								</div>
-							</div>
-							<div class="tab">
-								<div class="char-info" data-text="03">
-									<h3>미켈라의 칼날:말레니아</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
-									</p>
-									<ul>
-										<li><b>Area :</b> unknown </li>
-										<li><b>Race :</b> unknown</li>
-										<li><b>Voice : </b>Martha Mackintosh.</li>
-									</ul>
-									<div class="detail">
-										<div><span> unknown </span>HP</div>
-										<div><span> unknown </span>WeakPoint</div>
-										<div><span> unknown </span>StrongPoint</div>
-									</div>
-									<a href="" class="view-more">
-										View More Detail<i class="fa fa-arrow-right"></i>
-									</a>
-								</div>
-								<div class="char-photo">
-									<img src="./img/3_slide3_ (1).jpg" alt="" srcset="">
-									<img src="./img/3_slide3_ (1).png" alt="" srcset="">
-									<img src="./img/3_slide3_ (2).jpg" alt="" srcset="">
-								</div>
-							</div>
-						</div>
-						<div class="btn">
-							<label for="tab1">
-								
-							</label>
-							<label for="tab2">
-								
-							</label>
-							<label for="tab3">
-								
-							</label>
+					<div class="home-inner">
+						<h3 class="welcome-text">Park MinHyeong <span>Publishing Portfolio <i class="fa fa-heart"></i> </span> </h3>
+						<div class="opacity-img"></div>
+						<div class="home-heading">
+							<span>EldenRing</span>
+							<span>WebSite</span>
+							<span>Publishing</span>
 						</div>
 					</div>
 				</div>
@@ -162,7 +74,105 @@
 		<section id="char" class="cd-section">
 			<div>
 				<div class="content">
-					<img src="./img/3d-responsive-website-01-wireframe/temp-section-03.jpg" alt="">
+					<div class="char-inner">
+						<input type="radio" name="tabmenu" id="tab1" checked>
+						<input type="radio" name="tabmenu" id="tab2">
+						<input type="radio" name="tabmenu" id="tab3">
+						<div class="tabs">
+							<div class="tab">
+								<div class="char-info" data-text="01">
+									<h3>미켈라의 칼날:말레니아</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> Miquella’s Haligtree</li>
+										<li><b>Race :</b>	
+											Empyrean</li>
+										<li><b>Voice : </b>Pippa Bennett Warner</li>
+									</ul>
+									<div class="detail">
+										<div><span>18,473</span>HP</div>
+										<div><span>Fire </span>WeakPoint</div>
+										<div><span>Poison</span>StrongPoint</div>
+									</div>
+									<a href="./story_1.html" class="view-more" data-featherlight="iframe">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide1_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (2).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (3).jpg" alt="" srcset="">
+									<img src="./img/3_slide1_ (4).jpg" alt="" srcset="">
+								</div>
+							</div>
+							<div class="tab">
+								<div class="char-info" data-text="02">
+									<h3>달의 왕녀:라니</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> Ranni's Chamber</li>
+										<li><b>Race :</b>	
+											Empyrean</li>
+										<li><b>Voice : </b>Aimee-Ffion Edwards</li>
+									</ul>
+									<div class="detail">
+										<div><span> unknown </span>HP</div>
+										<div><span> unknown </span>WeakPoint</div>
+										<div><span> unknown </span>StrongPoint</div>
+									</div>
+									<a href="./story_2.html" class="view-more" data-featherlight="iframe">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide2_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide2_ (2).jpg" alt="" srcset="">
+									<img src="./img/3_slide2_ (3).jpg" alt="" srcset="">
+								</div>
+							</div>
+							<div class="tab">
+								<div class="char-info" data-text="03">
+									<h3>무녀:멜리나</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas repellendus, debitis quisquam libero doloremque veniam nostrum laboriosam quasi vel doloribus architecto dolorum assumenda est temporibus eaque, ab voluptatum delectus quidem ipsa veritatis repudiandae reprehenderit. Eaque excepturi soluta adipisci fuga?
+									</p>
+									<ul>
+										<li><b>Area :</b> unknown </li>
+										<li><b>Race :</b> unknown</li>
+										<li><b>Voice : </b>Martha Mackintosh.</li>
+									</ul>
+									<div class="detail">
+										<div><span> unknown </span>HP</div>
+										<div><span> unknown </span>WeakPoint</div>
+										<div><span> unknown </span>StrongPoint</div>
+									</div>
+									<a href="./story_3.html" class="view-more" data-featherlight="iframe">
+										View More Detail<i class="fa fa-arrow-right"></i>
+									</a>
+								</div>
+								<div class="char-photo">
+									<img src="./img/3_slide3_ (1).jpg" alt="" srcset="">
+									<img src="./img/3_slide3_ (1).png" alt="" srcset="">
+									<img src="./img/3_slide3_ (2).jpg" alt="" srcset="">
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<label for="tab1">
+								
+							</label>
+							<label for="tab2">
+								
+							</label>
+							<label for="tab3">
+								
+							</label>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -396,9 +406,9 @@
 	<a href="#" class="gototop">
 		<img src="./img/gototop.png" alt="">
 	</a>
-	<a href="" class="btn-hiring">
+	<a href="./intro.html" class="btn-intro" data-featherlight="iframe">
 		<i class="fa fa-comment-o"></i>
-		Hiring
+		Intro
 	</a>
 	<nav>
 		<ul class="cd-vertical-nav">
@@ -417,8 +427,8 @@
 	<script src="./js/velocity/main.js"></script> <!-- Resource jQuery -->
 	<!-- 슬라이더 slick slider -->
 	<script src="./js/slick/slick.min.js"></script>
-	<!-- 부드러운 스크롤링 애니메이션 플러그인 -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script> -->
+	<!-- 모달창 js -->
+	<script src="./js/featerlight/featherlight.js"></script>
 	<!-- custom js -->
 	<script src="./js/custom.js"></script>
 </body>

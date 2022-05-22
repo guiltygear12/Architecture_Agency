@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{box-sizing: border-box;}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none;}
+.modal{    
+    font-family: "에스코어드림";
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+.header-inner{
+    border-bottom: 1px solid #ddd;
+    width: 95%;
+    height: 90px;
+    margin: auto;
+    line-height: 90px;
+}
+.modal-display{
+    font-size: 16px;
+}
+/* TITLE */
+.intro-main{
+    height: 600px;
+    position: relative;
+}
+.intro-heading{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.intro-heading span{
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+.intro-heading span::before,
+.intro-heading span::after{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+}
+.intro-heading span::before{
+    right: 120%;
+}
+.intro-heading span::after{
+    left: 120%;
+}
+.intro-heading h1{
+    font-size: 80px;
+    font-weight: 100;
+    margin: 0;
+}
+/* trailer */
+.intro-trailer{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.intro-trailer>div{
+    /* border: 1px solid #000; */
+    float: left;
+    width: calc(100% /2);
+    height: 600px;
+}
+.center-parent{
+    position: relative;
+}
+.center-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.center-child h2{
+    font-size: 36px;
+    font-weight: normal;
+}
+.center-child p{
+    font-size: 20px;
+}
+.trailer{}
+.intro-slogan{
+    padding: 200px 0;
+}
+.intro-slogan p{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.intro-slogan p::before{
+    content: ',,';
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+    position: absolute;
+    color: #ccc;
+    transform: rotate(180deg);
+    top: -80px;
+    left: -80px;
+}
+.game-info ul{
+    display: inline-block;
+    width: 48%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2em;
+    font-weight: 300;
+}
+.game-info ul li:first-child{
+    font-weight: 600;
+}
+.sns{}
+.sns a{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+    position: relative;
+    transition: .3s;
+}
+.sns a::before{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: .3s;
+}
+.sns a:hover{
+    color: #fff;
+}
+.sns a:hover::before{
+    transform: translateX(-50%) scale(1);
+}
+.sns a:nth-of-type(1):before{
+    background-color: #1b2838;
+}
+.sns a:nth-of-type(2):before{
+    background-color: #2E6DB4;
+}
+.sns a:nth-of-type(3):before{
+    background-color: #107C10;
+}
